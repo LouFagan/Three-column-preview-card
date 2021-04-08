@@ -1,0 +1,61 @@
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dkCyan: hsl(184, 100%, 22%);
+  --vyDarkCyan: hsl(179, 100%, 13%);
+  --transWhite: hsla(0, 0%, 100%, 0.75);
+  --vyLightGray: hsl(0, 0%, 95%);
+}
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: white;
+  padding: 3.33rem;
+}
+.container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+}
+.container p {
+  color: white;
+  line-height: 1.4;
+}
+.container button {
+  width: 9.3rem;
+  border-radius: 20px;
+  padding: 10px;
+  border: white;
+}
+.sedans {
+  background-color: var(--orange);
+  padding: 3.33rem;
+}
+.btn-sedans {
+  color: var(--orange);
+}
+
+.suvs {
+  background-color: var(--dkCyan);
+  padding: 3.33rem;
+}
+btn-suvs {
+  color: var(--dkCyan);
+}
+.luxury {
+  background-color: var(--vyDarkCyan);
+  padding: 3.33rem;
+}
+.btn-luxury {
+  color: var(--vyDarkCyan);
+}
