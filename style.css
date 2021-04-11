@@ -10,36 +10,66 @@ html {
   box-sizing: border-box;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
-}
-body {
-  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 1040px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--vyLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+}
 .container {
-  background-color: white;
-  padding: 3.33rem;
+  display: block;
+  position: relative;
+  margin: 2.4rem;
+}
+.card {
+  position: relative;
+  display: block;
+}
+
+.container img {
+  width: 2.8rem;
+  padding-bottom: 1rem;
 }
 .container h1 {
   font-family: "Big Shoulders Display", cursive;
   color: white;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  padding-bottom: 1rem;
 }
 .container p {
   color: white;
-  line-height: 1.4;
+  line-height: 1.7;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
 .container button {
-  width: 9.3rem;
-  border-radius: 20px;
-  padding: 10px;
-  border: white;
+  width: 6.5rem;
+  border-radius: 25px;
+  padding: 10px 22px;
+  border: var(--vyLightGray);
+  cursor: pointer;
+  font-size: 0.6rem;
+  border: 2px solid var(--vyLightGray);
+}
+.container button:hover,
+.container button:active {
+  color: white;
+  background-color: transparent;
 }
 .sedans {
   background-color: var(--orange);
-  padding: 3.33rem;
+  padding: 2rem;
+  border-radius: 8px 8px 0 0;
 }
 .btn-sedans {
   color: var(--orange);
@@ -47,15 +77,65 @@ body {
 
 .suvs {
   background-color: var(--dkCyan);
-  padding: 3.33rem;
+  padding: 2rem;
 }
 btn-suvs {
   color: var(--dkCyan);
 }
 .luxury {
   background-color: var(--vyDarkCyan);
-  padding: 3.33rem;
+  padding: 2rem;
+  border-radius: 0 0 8px 8px;
 }
 .btn-luxury {
   color: var(--vyDarkCyan);
+}
+
+@media screen and (min-width: 875px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+    margin: 170px auto;
+    overflow: hidden;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+    padding: 42px;
+    flex: 1;
+  }
+  .sedans {
+    border-radius: 8px 0 0 8px;
+  }
+  .luxury {
+    border-radius: 0 8px 8px 0;
+  }
+  .card img {
+    width: 4.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .card h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+  .card button {
+    min-width: 9rem;
+    padding: 15px;
+    font-size: 0.975rem;
+    margin-bottom: 2rem;
+  }
 }
