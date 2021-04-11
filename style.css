@@ -32,6 +32,7 @@ body {
 .card {
   position: relative;
   display: block;
+  padding: 2rem;
 }
 
 .container img {
@@ -40,15 +41,16 @@ body {
 }
 .container h1 {
   font-family: "Big Shoulders Display", cursive;
-  color: white;
+  color: var(--vyLightGray);
   text-transform: uppercase;
   font-size: 2.3rem;
   padding-bottom: 1rem;
+  font-weight: 700;
 }
 .container p {
-  color: white;
+  color: var(--transWhite);
   line-height: 1.7;
-  font-size: 13px;
+  font-size: 0.866rem;
   font-weight: 400;
   padding-bottom: 2rem;
 }
@@ -68,7 +70,7 @@ body {
 }
 .sedans {
   background-color: var(--orange);
-  padding: 2rem;
+
   border-radius: 8px 8px 0 0;
 }
 .btn-sedans {
@@ -77,14 +79,13 @@ body {
 
 .suvs {
   background-color: var(--dkCyan);
-  padding: 2rem;
 }
 btn-suvs {
   color: var(--dkCyan);
 }
 .luxury {
   background-color: var(--vyDarkCyan);
-  padding: 2rem;
+
   border-radius: 0 0 8px 8px;
 }
 .btn-luxury {
@@ -112,27 +113,32 @@ btn-suvs {
     padding: 42px;
     flex: 1;
   }
+  .card {
+    padding: 2.2rem 3rem;
+  }
   .sedans {
     border-radius: 8px 0 0 8px;
   }
   .luxury {
     border-radius: 0 8px 8px 0;
   }
-  .card img {
+  .container img {
     width: 4.8rem;
     margin-bottom: 1rem;
   }
 
-  .card h1 {
+  .container h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
 
-  .card p {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
+  .container p {
+    font-size: 1.1rem;
+    padding-bottom: 9rem;
   }
-  .card button {
+  .container button {
+    position: absolute;
+    bottom: 20px;
     min-width: 9rem;
     padding: 15px;
     font-size: 0.975rem;
